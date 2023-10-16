@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Quiz</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .question {
+            font-weight: bold;
+        }
+        .answers {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz"><h1>Você é Materialista, Espirituoso ou Simplista</h1>
+        <h2>1. Eu gostaria de morar em:</h2>
+        <input type="radio" class="pergunta" name="pergunta1" value="mat"> Algum lugar chique e deslumbrante.<br>
+        <input type="radio" class="pergunta" name="pergunta1" value="esp"> Em um lugar onde eu possa me conectar com a naturesa.<br>
+        <input type="radio" class="pergunta" name="pergunta1" value="sim"> Em qualquer lugar que eu me sinta em casa, por mais humilde que seja.<br>
+
+        <h2>2. Eu quero para meu futuro:</h2>
+        <input type="radio" class="pergunta" name="pergunta2" value="mat"> Dinheiro.<br>
+        <input type="radio" class="pergunta" name="pergunta2" value="esp"> Paz de espirito.<br>
+        <input type="radio" class="pergunta" name="pergunta2" value="sim"> Conforto.<br>
+
+        <h2>3. Se eu compro algo:</h2>
+        <input type="radio" class="pergunta" name="pergunta3" value="mat"> É porque quero que todos saibam que comprei.<br>
+        <input type="radio" class="pergunta" name="pergunta3" value="esp"> É porque isso irá me ajudar a encontrar o quilibrio.<br>
+        <input type="radio" class="pergunta" name="pergunta3" value="sim"> É porque eu sei que isso me será util.<br>
+    
+        <h2>4. Eu me cuido para:</h2>
+        <input type="radio" class="pergunta" name="pergunta4" value="mat"> Os outros.<br>
+        <input type="radio" class="pergunta" name="pergunta4" value="esp"> Não desalinhar os meus chakras.<br>
+        <input type="radio" class="pergunta" name="pergunta4" value="sim"> Eu mesmo.<br>
+    
+        <h2>5. Eu levanto todo dia pensando:</h2>
+        <input type="radio" class="pergunta" name="pergunta5" value="mat"> Em ser a pessoa mais deslumbrante na sala.<br>
+        <input type="radio" class="pergunta" name="pergunta5" value="esp"> Em como é um milagre eu ainda viver para ver mais um dia.<br>
+        <input type="radio" class="pergunta" name="pergunta5" value="sim"> Viver o dia de hoje da melhor forma que eu puder.<br>
+        
+        <h2>6. Eu dou sentido a minha existencia:</h2>
+        <input type="radio" class="pergunta" name="pergunta6" value="mat"> Na opinião alheia.<br>
+        <input type="radio" class="pergunta" name="pergunta6" value="esp"> No destino.<br>
+        <input type="radio" class="pergunta" name="pergunta6" value="sim"> Em existir a minha propria maneira.<br>
+        
+        <h2>7. Oque eu mais valoriso em mim é:</h2>
+        <input type="radio" class="pergunta" name="pergunta7" value="mat"> Minha aparencia.<br>
+        <input type="radio" class="pergunta" name="pergunta7" value="esp"> Meu espirito.<br>
+        <input type="radio" class="pergunta" name="pergunta7" value="sim"> Eu mesmo por completo.<br>
+        
+        <h2>8. Se um dia eu for pai/mãe:</h2>
+        <input type="radio" class="pergunta" name="pergunta8" value="mat"> Vou dar muitos presentes para meu filho/filha.<br>
+        <input type="radio" class="pergunta" name="pergunta8" value="esp"> Vou me esforçar para que ele cumpra seu destino.<br>
+        <input type="radio" class="pergunta" name="pergunta8" value="sim"> Vou ser o/a melhor pai/mãe que eu puder.<br>
+        
+        <h2>9. Se eu for me casar com alguem, quero que essa pessoa me ame por:</h2>
+        <input type="radio" class="pergunta" name="pergunta9" value="mat"> Por minha beleza.<br>
+        <input type="radio" class="pergunta" name="pergunta9" value="esp"> Por sermos almas gêmeas.<br>
+        <input type="radio" class="pergunta" name="pergunta9" value="sim"> Por que me ama por completo.<br>
+        
+        <h2>10. Oque quero ser em uma palavra:</h2>
+        <input type="radio" class="pergunta" name="pergunta10" value="mat"> Rico.<br>
+        <input type="radio" class="pergunta" name="pergunta10" value="esp"> Sabio.<br>
+        <input type="radio" class="pergunta" name="pergunta10" value="sim"> Bom.<br>
+    
+    </div>
+    <button onclick="getResults()">Submit</button>
+    <div id="results"></div>
+
+    <script type="text/javascript">
+
+        function getResults(){
+            getResults(quizQuestions, document.getElementById('quiz'), document.getElementById('results'));
+        }
+    </script>
+</body>
+</html>
